@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+        /* header {
+            display: flex;
+            font-size: 20px; */
+        }
+        .navbar {
+            display: flex;
+            font-size: 20px;
+        }
+        li {
+            style:none;
+            padding: 34px 24px;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 3px 23px;
+            align-items: center;
+            border: 2px solid red;
+
+        }
+        section::before {
+            content: "This is a content";
+        }
+        h1 {
+            font-size: 4rem;
+        }
+        p {
+            text-align: center;
+        }
+        header::before {
+            content: Boom;
+            background: url('');
+            background-repeat: no-repeat;
+            position: absolute top:0 left:0;
+            width: 100%;
+            height: 100%;
+            z-index: inherit -1;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Content</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>bla bla bla Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem maiores iste illo corporis assumenda molestiae voluptatum facilis tempora, repellendus numquam dicta omnis reiciendis ipsum magni eius vel neque dignissimos, praesentium facere perspiciatis! Expedita, recusandae.</p>
+    </section>
+    <hr>
+
+</body>
+</html>

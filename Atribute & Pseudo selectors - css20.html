@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atribute & Pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input {
+            display: block;
+        }
+        input[type='text'] {
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target="_self"] {
+            font-size: 44px;
+            color: violet;
+        }
+        li:nth-child(2n+0) {
+            background-color: green;
+        }
+        li:nth-child(odd) {
+            background-color: brown;
+        }
+        li:nth-child(even) {
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="submit" placeholder="Submit">
+        <ul>
+            <li class="item" id="item-1">1</li>
+            <li class="item" id="item-2">2</li>
+            <li class="item" id="item-3">3</li>
+            <li class="item" id="item-4">4</li>
+            <li class="item" id="item-5">5</li>
+        </ul>
+    </div>
+    <h1><a href="google.com">Visit google</a></h1>
+</body>
+</html>

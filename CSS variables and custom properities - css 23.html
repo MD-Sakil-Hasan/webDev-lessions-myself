@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable & Custom Properities</title>
+    <style>
+        :root {
+            --a-box-bg-color: green;
+            --mw: 700px;
+            --c-color:powderblue;
+        }
+        .box {
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            margin: 2px 9px;
+        }
+        .a-box {
+            --box-color: blue;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid red;
+            margin: 2px 9px;
+        }
+        .container {
+            display: flex;
+            max-width: var(--mw);
+            margin: auto;
+            background-color: var(--c-color);
+            
+        }
+        .a-box {
+            background-color: var(--a-box-bg-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Box 1</div>
+        <div class="a-box">A Box1</div>
+        <div class="a-box">A Box2</div>
+        <div class="a-box">A Box3</div>
+    </div>
+</body>
+</html>

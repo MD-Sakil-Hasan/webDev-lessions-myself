@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: sans-serif;
+        }
+        .container {
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+            background-color: rgb(117, 238, 202);
+        }
+        .items {
+            border: 2px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(191, 230, 230);
+            
+        }
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+        #computer {
+            float: left;
+            width: 48%;
+        }
+        #stationary {
+            /* float: left; */cd
+            width: 100%;
+            clear: both;
+        }
+        p, h1 {
+            text-align: right;
+            text-align: left;
+            text-align: justify;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <H1>Welcome to my Store</H1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat? Modi commodi voluptates consequuntur architecto qui, consectetur tempore quaerat obcaecati odio sequi alias inventore eius, ab quidem fugit consequatur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate blanditiis natus totam necessitatibus iste laboriosam, velit nesciunt assumenda, eos consequuntur aspernatur ad aliquid vitae at excepturi quibusdam sed pariatur itaque facilis saepe quos exercitationem? </p>
+        </div>
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat? Modi commodi voluptates consequuntur architecto qui, consectetur tempore quaerat obcaecati odio sequi alias inventore eius, ab quidem fugit consequatur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, molestias laudantium. Incidunt nulla quasi ducimus doloremque sunt facilis! Ut voluptate voluptas sint quibusdam ducimus ipsam accusamus totam adipisci, iure sunt aperiam natus. Placeat, ad? </p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationaryspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat? Modi commodi voluptates consequuntur architecto qui, consectetur tempore quaerat obcaecati odio sequi alias inventore eius, ab quidem fugit consequatur suscipit.</p>
+        </div>
+        <div id="glassaes" class="items">
+            <h3>Stationary</h3>
+            <p id="glassaespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, quaerat? Modi commodi voluptates consequuntur architecto qui, consectetur tempore quaerat obcaecati odio sequi alias inventore eius, ab quidem fugit consequatur suscipit.</p>
+        </div>
+    </div>
+</body>
+</html>

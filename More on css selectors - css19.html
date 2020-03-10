@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on css selectors</title>
+    <style>
+        h1 {
+            font-size: 20px;
+            color: red;
+            background-color: teal;
+        }
+        /* affect p of every div */
+        div p {
+            color: tomato;
+        }
+        /* this will affect li inside div of div */
+        div li {
+            background-color: wheat;
+        }
+        /* this will affect direct child of div (p) */
+        div > p {
+            text-align: center;
+        }
+        /* this will affect p right behind of div */
+        div+p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>This is a heading</h1>
+        <div>
+            <ul>
+                <p>This is a paragraph</p>
+                    <h1>Fruits</h1>
+                    <li>Mango</li>
+                    <li>Tomato</li>
+            </ul>
+            
+            <p>This is another paragraph</p>
+        </div>
+    </div>
+</body>
+</html>
